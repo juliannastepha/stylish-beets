@@ -1,8 +1,6 @@
 html {
   background-color: #c9b5ab;
   font-family: "PT Serif", serif;
-  font-size: .8rem;
-  font-weight: normal;
   line-height: 1.5;
 }
 
@@ -18,8 +16,12 @@ figcaption {
 h1, h2 {
   font-size: 1.5rem;
   font-family: "PT Sans", sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
   color: #3f1622;
+}
+
+figcaption, p, blockquote, li, dt, dd, small {
+  color: #222;
 }
 
 nav {
@@ -28,12 +30,13 @@ nav {
   font-family: "PT Sans", sans-serif;
 }
 
-nav ol {
-  list-style-type: none;
+ol {
+  list-style-type: lower-greek;
 }
 
 a {
   color: #8f2440;
+  font-size: 1.125rem;
   text-decoration: none;
 }
 
@@ -42,10 +45,18 @@ a:hover {
   text-decoration: underline;
 }
 
+.bold {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
 blockquote {
   font-size: 1.5rem;
   font-style: italic;
+}
 
+strong {
+  font-weight: normal;
 }
 
 cite {
@@ -57,15 +68,20 @@ p:first-of-type {
   font-size: 1.125rem;
 }
 
-ol {
-  list-style-type: lower-greek;
+.thislist {
+  list-style-type: none;
 }
 
-dl {
+dt {
+  font-weight: bold;
+}
+
+dt:first-of-type {
   font-style: italic;
+  font-weight: normal;
 }
 
-dl > dd {
+dt > dd {
   font-weight: bold;
   font-style: normal;
   text-align: left;
@@ -74,4 +90,13 @@ dl > dd {
 dd > data {
   font-weight: normal;
   text-indent: .8em;
+}
+
+ul li {
+  list-style-type: circle;
+  font-size: .8rem;
+}
+
+footer {
+  font-size: .8rem;
 }
